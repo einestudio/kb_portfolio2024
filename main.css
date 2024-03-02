@@ -112,7 +112,7 @@ nav .nav-links .nav-link {
 }
 
 nav .nav-logo {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 /* header */
@@ -174,7 +174,7 @@ section.cases {
 
 section.cases .case {
   width: 100%;
-  padding: 1rem;
+  padding: 0.05rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
