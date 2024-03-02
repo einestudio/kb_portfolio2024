@@ -166,6 +166,10 @@ section.about .about-col p {
   }
 }
 
+.profil_about {
+  width: 24rem;
+}
+
 /* cases */
 section.cases {
   width: 100%;
