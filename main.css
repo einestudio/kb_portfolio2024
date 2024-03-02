@@ -74,7 +74,7 @@ main {
 }
 
 .gradient {
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
   height: 200px;
@@ -170,6 +170,7 @@ section.about .about-col p {
 section.cases {
   width: 100%;
   padding-top: 8rem;
+  color: var(--colors-background);
 }
 
 section.cases .case {
@@ -178,41 +179,43 @@ section.cases .case {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid var(--colors-primary);
+  border-top: 1px solid var(--colors-background);
 }
 
 section.cases .case#final-case {
-  border-bottom: 1px solid var(--colors-primary);
+  border-bottom: 1px solid var(--colors-background);
 }
 
 section.cases .case > div {
-  padding: 1rem;
+  padding: 1.5rem;
+  flex: 1;
 }
 
 section.cases .case .case-category {
-  flex: 2;
+  flex: 1;
   text-transform: uppercase;
 }
 
 section.cases .case .case-icon {
-  flex: 2;
+  flex: 1;
 }
 
 section.cases .case .case-icon .case-icon-img {
   width: 100px;
   height: 100px;
-  background: var(--colors-primary);
+  background: var(--colors-background);
   border-radius: 2rem;
 }
 
 section.cases .case .case-name {
-  flex: 10;
+  flex: 9;
   font-family: "PP Mondwest";
   font-size: 4rem;
 }
 
-section.cases .case .case-year {
+section.cases .case .case-year .case-info {
   flex: 1;
+  font-family: "PP NeueBit";
 }
 
 @media (max-width: 900px) {
@@ -256,7 +259,7 @@ footer .footer-col {
 }
 
 footer .footer-col p {
-  font-size: 0.825rem;
+  font-size: 1.125rem;
 }
 
 footer#light p {
