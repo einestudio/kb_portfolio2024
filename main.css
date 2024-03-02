@@ -208,7 +208,7 @@ section.cases .case .case-icon .case-icon-img {
 section.cases .case .case-name {
   flex: 10;
   font-family: "PP Mondwest";
-  font-size: 5rem;
+  font-size: 4rem;
 }
 
 section.cases .case .case-year {
