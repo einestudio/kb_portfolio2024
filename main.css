@@ -187,13 +187,14 @@ section.cases .case#final-case {
 }
 
 section.cases .case > div {
-  padding: 1.5rem;
-  flex: 1;
+  padding: 1rem;
+  flex: 2;
 }
 
 section.cases .case .case-category {
   flex: 1;
   text-transform: uppercase;
+  padding-left: 6%;
 }
 
 section.cases .case .case-icon {
