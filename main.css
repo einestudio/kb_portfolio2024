@@ -1,6 +1,4 @@
 :root {
-  /* --fonts-mondwest: "PPMondwest-Regular", apple-system, sans-serif;
-  --fonts-neueBit: "PPNeueBit-Bold", apple-system, sans-serif; */
   --colors-primary: #1b1b1b;
   --colors-background: #f1f1f1;
   --fontSizes-1: 13px;
@@ -8,6 +6,7 @@
   --fontSizes-3: 17px;
 }
 
+/* fonts */
 @font-face {
   font-family: "PPMondwest-Regular";
   src: url("fonts/PPMondwest-Regular.woff2") format(woff2),
@@ -34,6 +33,8 @@
   font-weight: normal;
   font-style: normal;
 }
+
+/* body */
 
 html,
 body {
