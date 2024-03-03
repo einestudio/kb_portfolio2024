@@ -1,6 +1,6 @@
 :root {
-  /* --fonts-mondwest: "PP Mondwest", apple-system, sans-serif;
-  --fonts-neueBit: "PP NeueBit", apple-system, sans-serif; */
+  /* --fonts-mondwest: "PPMondwest-Regular", apple-system, sans-serif;
+  --fonts-neueBit: "PPNeueBit-Bold", apple-system, sans-serif; */
   --colors-primary: #1b1b1b;
   --colors-background: #f1f1f1;
   --fontSizes-1: 13px;
@@ -37,7 +37,7 @@
 
 html,
 body {
-  font-family: "PP NeueBit";
+  font-family: "PPNeueBit-Bold";
 }
 
 a {
@@ -46,7 +46,7 @@ a {
 }
 
 p {
-  font-family: "PP Mondwest";
+  font-family: "PPMondwest-Regular";
   font-size: 1.25rem;
 }
 
@@ -146,7 +146,7 @@ header {
 }
 
 header #name {
-  font-family: "PP NeueBit";
+  font-family: "PPNeueBit-Bold";
   font-size: 3.575rem;
 }
 
@@ -235,13 +235,13 @@ section.cases .case .case-icon .case-icon-img {
 
 section.cases .case .case-name {
   flex: 9;
-  font-family: "PP Mondwest";
+  font-family: "PPMondwest-Regular";
   font-size: 4rem;
 }
 
 section.cases .case .case-year .case-info {
   flex: 1;
-  font-family: "PP NeueBit";
+  font-family: "PPNeueBit-Bold";
 }
 
 @media (max-width: 900px) {
