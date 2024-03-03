@@ -9,15 +9,17 @@
 }
 
 @font-face {
-  font-family: "PPNeueBit-Bold";
-  src: url(fonts/PPNeueBit-Bold.woff) format(woff);
+  font-family: "PPMondwest-Regular";
+  src: url("fonts/PPMondwest-Regular.woff2") format(woff2),
+    url("fonts/PPMondwest-Regular.woff") format(woff);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "PPMondwest-Regular";
-  src: url(fonts/PPMondwest-Regular.woff) format(woff);
+  font-family: "PPNeueBit-Bold";
+  src: url("fonts/PPNeueBit-Bold.woff2") format(woff2),
+    url("fonts/PPNeueBit-Bold.woff") format(woff);
   font-weight: normal;
   font-style: normal;
 }
@@ -27,7 +29,8 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PPNeueBit-Bold";
-  src: url("fonts/PPNeueBit-Bold.woff") format(woff);
+  src: url("fonts/PPNeueBit-Bold.woff2") format(woff2),
+    url("fonts/PPNeueBit-Bold.woff") format(woff);
   font-weight: normal;
   font-style: normal;
 }
