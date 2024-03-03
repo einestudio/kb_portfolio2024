@@ -19,7 +19,7 @@
   font-family: "PPNeueBit-Bold";
   src: url("fonts/PPNeueBit-Bold.woff2") format(woff2),
     url("fonts/PPNeueBit-Bold.woff") format(woff);
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -28,10 +28,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "PPNeueBit-Bold";
-  src: url("fonts/PPNeueBit-Bold.woff2") format(woff2),
-    url("fonts/PPNeueBit-Bold.woff") format(woff);
-  font-weight: normal;
-  font-style: normal;
 }
 
 /* body */
@@ -52,7 +48,7 @@ p {
 }
 
 main {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
@@ -69,8 +65,8 @@ main {
 }
 
 .content__img {
-  max-width: 250px;
-  height: 350px;
+  max-width: 25%;
+  /* height: ; */
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -86,26 +82,13 @@ main {
 }
 
 .container {
-  width: 100vw;
+  height: 100vh;
   min-height: 100vh;
   background: var(--colors-background);
 }
 
 .container#dark {
   background: var(--colors-primary);
-}
-
-.gradient {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 200px;
-  background: var(--colors-background);
-  background: linear-gradient(
-    0deg,
-    rgba(40, 40, 40, 0) 0%,
-    var(--colors-background) 100%
-  );
 }
 
 /* nav */
@@ -122,6 +105,7 @@ nav {
 
 nav#light a {
   color: var(--colors-background);
+  font-weight: normal;
 }
 
 nav .nav-links {
@@ -193,7 +177,7 @@ section.about .about-col p {
 }
 
 .profil_about {
-  width: 24rem;
+  width: 100%;
 }
 
 /* cases */
@@ -245,11 +229,16 @@ section.cases .case .case-name {
 }
 
 section.cases .case .case-year .case-info {
-  flex: 1;
   font-family: "PPNeueBit-Bold";
+  font-size: 1rem;
+  max-width: 5rem;
+  text-align: right;
 }
 
 @media (max-width: 900px) {
+  section.cases .case .case-year .case-info {
+    font-size: 1.5rem; /* Larger font size for wider screens */
+  }
   section.cases .case .case-category {
     font-size: 0.75rem;
   }
@@ -277,16 +266,21 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-}
-
-footer#relative {
-  padding: 4rem 2rem;
-  position: relative;
+  box-sizing: border-box;
 }
 
 footer .footer-col {
   flex: 1;
   text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-all;
+  hyphens: none;
+}
+
+footer#relative {
+  padding: calc(0.5rem + 1vw) calc(1rem + 2vw);
+  position: relative;
 }
 
 footer .footer-col p {
@@ -335,4 +329,49 @@ footer#light p {
 #project-8 {
   background: url("./images/08.png") no-repeat 50% 50%;
   background-size: cover;
+}
+
+/* General styles for smaller screens */
+@media (max-width: 900px) {
+  * {
+    font-size: 0.875rem; /* Reduce font size for smaller screens */
+  }
+
+  /* Adjust specific elements for smaller screens */
+  nav .nav-logo {
+    font-size: 2.5rem; /* Reduce font size for smaller screens */
+  }
+
+  header {
+    font-size: 2.575rem; /* Reduce font size for smaller screens */
+  }
+
+  .name {
+    font-size: 2.575rem; /* Reduce font size for smaller screens */
+  }
+
+  section.about {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  section.about .about-col p {
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+  }
+
+  section.cases .case .case-category {
+    font-size: 0.6rem; /* Reduce font size for smaller screens */
+  }
+
+  section.cases .case .case-year .case-info {
+    font-size: 1rem; /* Increase font size for smaller screens */
+  }
+
+  section.cases .case .case-year {
+    display: block; /* Show the year for smaller screens */
+  }
+
+  footer .footer-col p {
+    font-size: 0.875rem; /* Reduce font size for smaller screens */
+  }
 }
