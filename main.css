@@ -1,6 +1,6 @@
 :root {
-  --fonts-mondwest: "PP Mondwest", apple-system, sans-serif;
-  --fonts-neueBit: "PP NeueBit", apple-system, sans-serif;
+  /* --fonts-mondwest: "PP Mondwest", apple-system, sans-serif;
+  --fonts-neueBit: "PP NeueBit", apple-system, sans-serif; */
   --colors-primary: #1b1b1b;
   --colors-background: #f1f1f1;
   --fontSizes-1: 13px;
@@ -12,6 +12,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* ******************reset************************ * {
+  font-family: "PPNeueBit-Bold";
+  src: url("PPNeueBit-Bold.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+} */
+
+/***************************fonts***************************/
+
+@font-face {
+  font-family: "PPNeueBit-Bold";
+  src: url("PPNeueBit-Bold.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PPMondwest-Regular";
+  src: url("PPMondwest-Regular.woff") format(woff);
+  font-weight: normal;
+  font-style: normal;
 }
 
 html,
