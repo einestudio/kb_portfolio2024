@@ -145,8 +145,12 @@ header {
   text-align: center;
 }
 
-header #name {
+.name {
   font-family: "PPNeueBit-Bold";
+  font-size: 3.575rem;
+}
+
+header #name {
   font-size: 3.575rem;
 }
 
