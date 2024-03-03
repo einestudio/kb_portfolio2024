@@ -25,16 +25,14 @@
 
 @font-face {
   font-family: "PPNeueBit-Bold";
-  src: url("fonts/PPNeueBit-Bold.otf") format(otf),
-    url(fonts/PPNeueBit-Bold.woff) format(woff);
+  src: url(fonts/PPNeueBit-Bold.woff) format(woff);
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "PPMondwest-Regular";
-  src: url("fonts/PPMondwest-Regular.otf") format(otf),
-    url(fonts/PPMondwest-Regular.woff) format(woff);
+  src: url(fonts/PPMondwest-Regular.woff) format(woff);
   font-weight: normal;
   font-style: normal;
 }
